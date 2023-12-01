@@ -50,7 +50,9 @@ class User
         if (false === $statement) {
             throw new Exception('Invalid prepare statement');
         }
-
+        if (false === $statement) {
+            throw new Exception('Invalid prepare statement');
+        }
         $result = $statement->execute([':username' => $username]);
 
         if (false === $result) {
